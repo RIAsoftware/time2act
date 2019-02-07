@@ -1,0 +1,22 @@
+{
+  "name": "time2act",
+  "version": "1.0.0",
+  "description": "Show different content to your clients, depending on time of a day",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "font-awesome": "^4.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "time",
+    "related",
+    "content",
+    "cms"
+  ],
+  "author": "RIA Software <info@riasc.net> (http://www.riasc.net/time2act.html)",
+  "license": "ISC"
+}

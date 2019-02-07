@@ -1,0 +1,240 @@
+.time2act-button {
+    position: fixed;
+    display: none;
+    z-index: 99997;
+    cursor: pointer;
+}
+
+.time2act-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+/*    height: 100%;
+    width: 100%;*/
+    visibility: hidden;
+    -webkit-transition: visibility 0s 0.6s;
+    transition: visibility 0s 0.6s;
+    z-index: 99998;
+    display: none;
+}
+
+/*.time2act-panel::after {
+     overlay layer 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    -webkit-transition: background 0.3s 0.3s;
+    transition: background 0.3s 0.3s;
+}*/
+
+.time2act-panel.time2act-panel-show {
+    visibility: visible;
+    -webkit-transition: visibility 0s 0s;
+    transition: visibility 0s 0s;
+}
+
+.time2act-panel.time2act-panel-show::after {
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transition: background 0.3s 0s;
+    transition: background 0.3s 0s;
+}
+
+.time2act-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    /* image replacement */
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.time2act-close::before, .time2act-close::after {
+    /* close icon created in CSS */
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    height: 3px;
+    width: 20px;
+    background-color: #424f5c;
+    /* this fixes a bug where pseudo elements are slighty off position */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.time2act-close::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.time2act-close::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.time2act-close:hover::before, .time2act-close:hover::after {
+    background-color: #ffffff;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.time2act-close:hover::before {
+    -webkit-transform: rotate(220deg);
+    -ms-transform: rotate(220deg);
+    transform: rotate(220deg);
+}
+
+.time2act-close:hover::after {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.time2act-panel-show .time2act-close::before {
+    -webkit-animation: time2act-close-1 0.6s 0.3s;
+    animation: time2act-close-1 0.6s 0.3s;
+}
+
+.time2act-panel-show .time2act-close::after {
+    -webkit-animation: time2act-close-2 0.6s 0.3s;
+    animation: time2act-close-2 0.6s 0.3s;
+}
+
+@-webkit-keyframes time2act-close-1 {
+    0%, 50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes time2act-close-1 {
+    0%, 50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes time2act-close-2 {
+    0%, 50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes time2act-close-2 {
+    0%, 50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+.time2act-panel_container {
+    position: fixed;
+/*    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #000;*/
+    z-index: 1;
+    overflow: auto;
+    -webkit-transition: -webkit-transform 0.3s 0.3s;
+    transition: -webkit-transform 0.3s 0.3s;
+    transition: transform 0.3s 0.3s;
+    transition: transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+}
+/*
+.time2act-panel_from_right .time2act-panel_container {
+    right: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.time2act-panel_from_left .time2act-panel_container {
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.time2act-panel_from_bottom .time2act-panel_container {
+    bottom: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.time2act-panel_from_top .time2act-panel_container {
+    bottom: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}*/
+
+/*.time2act-panel_from_center .time2act-panel_container {
+    zoom: 0;
+    -webkit-transform: scale(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+transform: scale3d(0,0,0);
+}*/
+
+.time2act-panel-show .time2act-panel_container {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    transform: scale3d(1,1,1) !important;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.time2act-panel_content {
+    /*display: block;*/
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+}
+
+.content_big {
+    /*position: fixed;*/
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: auto !important;
+     /*smooth scrolling on touch devices*/ 
+    -webkit-overflow-scrolling: touch;
+}
+.pull-right {
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+}

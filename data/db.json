@@ -1,0 +1,61 @@
+{
+    "settings": {
+        "button": {
+            "css": {
+                "width": "auto",
+                "height": "auto",
+                "margin": "0 0 0 -65px",
+                "border": "none",
+                "border-radius": "20px 0 0 20px",
+                "left": "auto",
+                "right": "0",
+                "top": "50%",
+                "bottom": "auto",
+                "padding": "50px 5px",
+                "background": "rgb(253, 0, 0)"
+            },
+            "animation": "none"
+        },
+        "container": {
+            "position": "left",
+            "css": {
+                "background": "rgba(255, 0, 0, 0)",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+                "bottom": "0",
+                "width": "auto",
+                "height": "auto",
+                "margin": "0",
+                "padding": "20px 30px",
+                "border": "none",
+                "border-radius": "0"
+            },
+            "close": {
+                "color": "rgb(255, 0, 0)"
+            },
+            "animation": "fade"
+        },
+        "content_change_interval": 5,
+        "password": "80cbcbe1da9be51b039e80e78a89b38f",
+        "preview_changes": "1"
+    },
+    "contents": [
+        {
+            "name": "Coffee time",
+            "active": 1,
+            "start": "00:00",
+            "end": "23:59",
+            "button_template": "<span class=\"fa fa-coffee fa-2x\" style=\"color: white;\"><\/span>",
+            "template": "<img src=\"http:\/\/www.riasc.net\/time2act\/images\/coffee_time.jpg\" alt=\"\" width=\"600\" height=\"600\" \/>"
+        },
+        {
+            "name": "Cheesecake",
+            "active": 1,
+            "start": "00:00",
+            "end": "23:59",
+            "button_template": "<span class=\"fa fa-cutlery fa-2x\" style=\"color: white;\">&nbsp;<\/span>",
+            "template": "<img title=\"mixed.jpg\" src=\"http:\/\/www.riasc.net\/time2act\/images\/cheesecake.jpg\" alt=\"\" width=\"600\" height=\"600\" \/>"
+        }
+    ]
+}
