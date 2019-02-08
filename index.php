@@ -521,6 +521,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     forced_root_block: "",
                                     // enable automatic uploads of images represented by blob or data URIs
                                     automatic_uploads: true,
+                                    apply_source_formatting : false,
                                     // URL of our upload handler (for more details check: https://www.tinymce.com/docs/configure/file-image-upload/#images_upload_url)
                                     // images_upload_url: 'postAcceptor.php',
                                     // here we add custom filepicker only to Image dialog

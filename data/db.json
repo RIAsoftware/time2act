@@ -54,7 +54,7 @@
             "active": 1,
             "start": "00:00",
             "end": "23:59",
-            "button_template": "<span class=\"fa fa-cutlery fa-2x\" style=\"color: white;\">&nbsp;<\/span>",
+            "button_template": "<span class=\"fa fa-cutlery fa-2x\" style=\"color: white;\"><\/span>",
             "template": "<img title=\"mixed.jpg\" src=\"http:\/\/www.riasc.net\/time2act\/images\/cheesecake.jpg\" alt=\"\" width=\"600\" height=\"600\" \/>"
         }
     ]
