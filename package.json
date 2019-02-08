@@ -10,6 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/RIAsoftware/time2act.git"
+    },
   "keywords": [
     "jquery-plugin",
     "time",
@@ -17,6 +21,6 @@
     "content",
     "cms"
   ],
-  "author": "RIA Software <info@riasc.net> (http://www.riasc.net/time2act.html)",
-  "license": "ISC"
+  "author": "RIA Software <info@riasc.net> (http://www.riasc.net)",
+  "license": "MIT"
 }

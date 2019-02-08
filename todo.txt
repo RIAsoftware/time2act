@@ -1,0 +1,4 @@
+- timer type: once|daily|weekly|monthly
+- predefined frontend widgets
+- separate backend visual part from contents
+- rewrite jQuery in JS
