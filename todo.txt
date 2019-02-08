@@ -2,3 +2,4 @@
 - predefined frontend widgets
 - separate backend visual part from contents
 - rewrite jQuery in JS
+- 
